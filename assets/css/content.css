@@ -1,0 +1,93 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    align-items: center;
+    background-color: #2d199a;
+    padding: 0.75rem 1.5rem;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed; /* Fix sidebar to the left */
+    top: 35px;
+    left: 0;
+    width: 150px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #6f7476;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.sidebar li a:hover {
+    color: #333;
+    background-color: #ddd;
+}
+
+/* Main Content (including table) */
+.table-container {
+    margin: 1rem;
+    margin-left: 170px; /* Adjust to match sidebar width + spacing */
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    border-radius: 4px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-container th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+.table-container tr:hover {
+    background-color: #e9ecef;
+}
+
+a {
+    text-decoration: none;
+}
